@@ -43,6 +43,9 @@ F 0 "C25" H 12175 2000 50  0000 L CNN
 F 1 "10µF" H 12175 1800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12150 1900 60  0001 C CNN
 F 3 "" H 12150 1900 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "10µF capacitor" H 12150 1900 50  0001 C CNN "Description"
+F 6 "SMD" H 12150 1900 50  0001 C CNN "Type"
 	1    12150 1900
 	-1   0    0    -1  
 $EndComp
@@ -55,9 +58,12 @@ F 1 "25MHz" H 12450 4325 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 12450 4475 60  0001 C CNN
 F 3 "https://www.ndk.com/images/products/catalog/c_NX2016SA_e.pdf" H 12450 4475 60  0001 C CNN
 F 4 "NDK" H 11625 6475 60  0001 C CNN "Manufacturer"
-F 5 "NX2016SA-25MHZ-EXS00A-CS11321" H 11625 6475 60  0001 C CNN "PN"
+F 5 "NX2016SA-25MHZ-EXS00A-CS11321" H 11625 6475 60  0001 C CNN "Manufacturer PN"
 F 6 "Digikey" H 11625 6475 60  0001 C CNN "Distributor"
 F 7 "644-1367-1-ND" H 11625 6475 60  0001 C CNN "Distributor PN"
+F 8 "Resonator 25MHz" H 12450 4475 50  0001 C CNN "Description"
+F 9 "2016-4pin" H 12450 4475 50  0001 C CNN "Package"
+F 10 "SMD" H 12450 4475 50  0001 C CNN "Type"
 	1    12450 4475
 	0    -1   1    0   
 $EndComp
@@ -77,9 +83,12 @@ L Device:C_Small C30
 U 1 1 56BA5132
 P 12800 4700
 F 0 "C30" H 12810 4770 50  0000 L CNN
-F 1 "TBD" H 12625 4775 50  0000 L CNN
+F 1 "5.1pF" H 12675 4625 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12800 4700 60  0001 C CNN
 F 3 "" H 12800 4700 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "5.1pF ceramic, +/- 5% tolerance" H 12800 4700 50  0001 C CNN "Description"
+F 6 "SMD" H 12800 4700 50  0001 C CNN "Type"
 	1    12800 4700
 	0    1    -1   0   
 $EndComp
@@ -116,9 +125,12 @@ F 1 "F_Small" H 14905 2790 50  0000 L CNN
 F 2 "Fuse:Fuse_1210_3225Metric" H 15025 2850 50  0001 C CNN
 F 3 "" H 15025 2850 50  0000 C CNN
 F 4 "Bel Fuse Inc." H 13075 -100 60  0001 C CNN "Manufacturer"
-F 5 "0ZCH0050FF2G" H 13075 -100 60  0001 C CNN "PN"
+F 5 "0ZCH0050FF2G" H 13075 -100 60  0001 C CNN "Manufacturer PN"
 F 6 "Digikey" H 13075 -100 60  0001 C CNN "Distributor"
 F 7 "507-1786-1-ND" H 13075 -100 60  0001 C CNN "Distributor PN"
+F 8 "fuse" H 15025 2850 50  0001 C CNN "Description"
+F 9 "1210" H 15025 2850 50  0001 C CNN "Package"
+F 10 "SMD" H 15025 2850 50  0001 C CNN "Type"
 	1    15025 2850
 	-1   0    0    -1  
 $EndComp
@@ -152,6 +164,9 @@ F 0 "C28" V 14500 3250 50  0000 L CNN
 F 1 "100nF" V 14500 2950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 14450 3200 50  0001 C CNN
 F 3 "" H 14450 3200 50  0001 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "100nF ceramic capacitor +/- 20% tolerance" H 14450 3200 50  0001 C CNN "Description"
+F 6 "SMD" H 14450 3200 50  0001 C CNN "Type"
 	1    14450 3200
 	1    0    0    1   
 $EndComp
@@ -186,8 +201,9 @@ F 2 "Battery:BatteryHolder_Keystone_3001_1x12mm" V 7275 1260 50  0001 C CNN
 F 3 "https://www.keyelco.com/userAssets/file/M65p9.pdf" V 7275 1260 50  0001 C CNN
 F 4 "Keystone Electronics" H 7275 1200 50  0001 C CNN "Manufacturer"
 F 5 "3001" H 7275 1200 50  0001 C CNN "Manufacturer PN"
-F 6 "do not place" H 7275 1200 50  0001 C CNN "do not place"
-F 7 "THT" H 7275 1200 50  0001 C CNN "Package"
+F 6 "do not place" H 7275 1200 50  0001 C CNN "Do Not Place"
+F 7 "PTH" H 7275 1200 50  0001 C CNN "Type"
+F 8 "resistor 1225 ohms" H 7275 1200 50  0001 C CNN "Description"
 	1    7275 1200
 	1    0    0    -1  
 $EndComp
@@ -210,6 +226,9 @@ F 0 "R55" V 13775 1125 50  0000 C CNN
 F 1 "22" V 13825 1300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13755 1300 30  0001 C CNN
 F 3 "" H 13825 1300 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "resistor 22 ohms 5%" H 13825 1300 50  0001 C CNN "Description"
+F 6 "SMD" H 13825 1300 50  0001 C CNN "Type"
 	1    13825 1300
 	0    1    1    0   
 $EndComp
@@ -221,6 +240,9 @@ F 0 "R56" V 13800 1225 50  0000 C CNN
 F 1 "22" V 13825 1400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13755 1400 30  0001 C CNN
 F 3 "" H 13825 1400 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "resistor 22 ohms 5%" H 13825 1400 50  0001 C CNN "Description"
+F 6 "SMD" H 13825 1400 50  0001 C CNN "Type"
 	1    13825 1400
 	0    1    1    0   
 $EndComp
@@ -232,6 +254,9 @@ F 0 "R57" V 13800 1325 50  0000 C CNN
 F 1 "22" V 13825 1500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13755 1500 30  0001 C CNN
 F 3 "" H 13825 1500 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "resistor 22 ohms 5%" H 13825 1500 50  0001 C CNN "Description"
+F 6 "SMD" H 13825 1500 50  0001 C CNN "Type"
 	1    13825 1500
 	0    1    1    0   
 $EndComp
@@ -243,6 +268,9 @@ F 0 "R49" V 12925 1200 50  0000 C CNN
 F 1 "68K" V 12900 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12830 1050 30  0001 C CNN
 F 3 "" H 12900 1050 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 68 Kohms 5% tolerance" H 12900 1050 50  0001 C CNN "Description"
+F 6 "SMD" H 12900 1050 50  0001 C CNN "Type"
 	1    12900 1050
 	-1   0    0    1   
 $EndComp
@@ -254,6 +282,9 @@ F 0 "R50" V 13050 1200 50  0000 C CNN
 F 1 "68K" V 13025 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12955 1050 30  0001 C CNN
 F 3 "" H 13025 1050 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 68 Kohms 5% tolerance" H 13025 1050 50  0001 C CNN "Description"
+F 6 "SMD" H 13025 1050 50  0001 C CNN "Type"
 	1    13025 1050
 	-1   0    0    1   
 $EndComp
@@ -265,6 +296,9 @@ F 0 "R51" V 13175 1200 50  0000 C CNN
 F 1 "68K" V 13150 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13080 1050 30  0001 C CNN
 F 3 "" H 13150 1050 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 68 Kohms 5% tolerance" H 13150 1050 50  0001 C CNN "Description"
+F 6 "SMD" H 13150 1050 50  0001 C CNN "Type"
 	1    13150 1050
 	-1   0    0    1   
 $EndComp
@@ -276,6 +310,9 @@ F 0 "R52" V 13300 1200 50  0000 C CNN
 F 1 "68K" V 13275 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13205 1050 30  0001 C CNN
 F 3 "" H 13275 1050 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 68 Kohms 5% tolerance" H 13275 1050 50  0001 C CNN "Description"
+F 6 "SMD" H 13275 1050 50  0001 C CNN "Type"
 	1    13275 1050
 	-1   0    0    1   
 $EndComp
@@ -287,6 +324,9 @@ F 0 "R53" V 13425 1200 50  0000 C CNN
 F 1 "68K" V 13400 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13330 1050 30  0001 C CNN
 F 3 "" H 13400 1050 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 68 Kohms 5% tolerance" H 13400 1050 50  0001 C CNN "Description"
+F 6 "SMD" H 13400 1050 50  0001 C CNN "Type"
 	1    13400 1050
 	-1   0    0    1   
 $EndComp
@@ -298,6 +338,9 @@ F 0 "R54" V 13550 1200 50  0000 C CNN
 F 1 "68K" V 13525 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13455 1050 30  0001 C CNN
 F 3 "" H 13525 1050 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 68 Kohms 5% tolerance" H 13525 1050 50  0001 C CNN "Description"
+F 6 "SMD" H 13525 1050 50  0001 C CNN "Type"
 	1    13525 1050
 	-1   0    0    1   
 $EndComp
@@ -424,6 +467,10 @@ F 0 "J12" H 14950 2365 50  0000 C CNN
 F 1 "SD_Card" H 14950 2274 50  0000 C CNN
 F 2 "Connector_FCI:10067847-001RLF" H 14950 1700 50  0001 C CNN
 F 3 "http://global.kyocera.com/prdct/electro/product/pdf/5638.pdf" H 14950 1700 50  0001 C CNN
+F 4 "SD card socket" H 14950 1700 50  0001 C CNN "Description"
+F 5 "SMD" H 14950 1700 50  0001 C CNN "Type"
+F 6 "Amphenol/FCI" H 14950 1700 50  0001 C CNN "Manufacturer"
+F 7 "10067847-001RLF" H 14950 1700 50  0001 C CNN "Manufacturer PN"
 	1    14950 1700
 	1    0    0    -1  
 $EndComp
@@ -484,39 +531,30 @@ F 2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm" H 15525 4025 50  0001
 F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 14725 4375 50  0001 C CNN
 F 4 "Abracon" H 14825 4375 50  0001 C CNN "Manufacturer"
 F 5 "ASEMB-14.31818MHZ-XY-T" H 14825 4375 50  0001 C CNN "Manufacturer PN"
-F 6 "535-11118-1-ND" H 14825 4375 50  0001 C CNN "Digi-Key PN"
+F 6 "Digikey" H 14825 4375 50  0001 C CNN "Distributor"
+F 7 "535-11118-1-ND" H 14825 4375 50  0001 C CNN "Distributor PN"
+F 8 "Oscillator 14.31818MHz" H 14825 4375 50  0001 C CNN "Description"
+F 9 "ASE-4Pin" H 14825 4375 50  0001 C CNN "Package"
+F 10 "SMD" H 14825 4375 50  0001 C CNN "Type"
 	1    14825 4375
 	-1   0    0    -1  
 $EndComp
 $Comp
 L RCJ-044:RCJ-044 J3
 U 1 1 5F5089A0
-P 6825 10300
-F 0 "J3" H 6495 10254 50  0000 R CNN
-F 1 "COMPOSITE" H 6495 10345 50  0000 R CNN
-F 2 "CUI_RCJ-044:CUI_RCJ-044" H 6825 10300 50  0001 L BNN
-F 3 "Manufacturer Recommendations" H 6825 10300 50  0001 L BNN
-F 4 "CUI Devices" H 6825 10300 50  0001 L BNN "Manufacturer"
-F 5 "RCJ-044" H 6825 10300 50  0001 L BNN "Manufacturer PN"
-F 6 "YELLOW" H 6825 10300 50  0001 C CNN "Note:"
-F 7 "do not place" H 6825 10300 50  0001 C CNN "do not place"
-F 8 "THT" H 6825 10300 50  0001 C CNN "Package"
-	1    6825 10300
-	-1   0    0    1   
+P 6950 10300
+F 0 "J3" H 6620 10254 50  0000 R CNN
+F 1 "COMPOSITE" H 6620 10345 50  0000 R CNN
+F 2 "CUI_RCJ-044:CUI_RCJ-044" H 6950 10300 50  0001 L BNN
+F 3 "Manufacturer Recommendations" H 6950 10300 50  0001 L BNN
+F 4 "CUI Devices" H 6950 10300 50  0001 L BNN "Manufacturer"
+F 5 "RCJ-044" H 6950 10300 50  0001 L BNN "Manufacturer PN"
+F 6 "yellow RCA/Phono jack" H 6950 10300 50  0001 C CNN "Description"
+F 7 "do not place" H 6950 10300 50  0001 C CNN "Do Not Place"
+F 8 "PTH" H 6950 10300 50  0001 C CNN "Type"
+	1    6950 10300
+	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C20
-U 1 1 5F5089A6
-P 6325 10650
-F 0 "C20" H 6417 10696 50  0000 L CNN
-F 1 "1nF" H 6417 10605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6325 10650 50  0001 C CNN
-F 3 "~" H 6325 10650 50  0001 C CNN
-	1    6325 10650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6325 10600 6325 10750
 Wire Wire Line
 	6175 10200 6325 10200
 $Comp
@@ -527,8 +565,9 @@ F 0 "J11" H 6525 9050 50  0000 C CNN
 F 1 "SERIAL" H 6525 8950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6400 8625 50  0001 C CNN
 F 3 "~" H 6400 8625 50  0001 C CNN
-F 4 "do not place" H 6400 8625 50  0001 C CNN "do not place"
-F 5 "THT" H 6400 8625 50  0001 C CNN "Package"
+F 4 "do not place" H 6400 8625 50  0001 C CNN "Do Not Place"
+F 5 "PTH" H 6400 8625 50  0001 C CNN "Type"
+F 6 "1x6 header" H 6400 8625 50  0001 C CNN "Description"
 	1    6400 8625
 	-1   0    0    -1  
 $EndComp
@@ -603,8 +642,9 @@ F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Hous
 F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4888_CO.pdf" H 11175 1275 50  0001 C CNN
 F 4 "Assmann" H 11175 1275 60  0001 C CNN "Manufacturer"
 F 5 "A-DS 09 A/KG-T2S" H 11175 1275 60  0001 C CNN "Manufacturer PN"
-F 6 "do not place" H 11175 1275 50  0001 C CNN "do not place"
-F 7 "THT" H 11175 1275 50  0001 C CNN "Package"
+F 6 "do not place" H 11175 1275 50  0001 C CNN "Do Not Place"
+F 7 "PTH" H 11175 1275 50  0001 C CNN "Type"
+F 8 "DB9 Female" H 11175 1275 50  0001 C CNN "Description"
 	1    11175 1275
 	1    0    0    -1  
 $EndComp
@@ -618,8 +658,9 @@ F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Hous
 F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4888_CO.pdf" H 11175 2850 50  0001 C CNN
 F 4 "Assmann" H 8125 2875 60  0001 C CNN "Manufacturer"
 F 5 "A-DS 09 A/KG-T2S" H 8125 2875 60  0001 C CNN "Manufacturer PN"
-F 6 "do not place" H 11175 2850 50  0001 C CNN "do not place"
-F 7 "THT" H 11175 2850 50  0001 C CNN "Package"
+F 6 "do not place" H 11175 2850 50  0001 C CNN "Do Not Place"
+F 7 "PTH" H 11175 2850 50  0001 C CNN "Type"
+F 8 "DB9 Female" H 11175 2850 50  0001 C CNN "Description"
 	1    11175 2850
 	1    0    0    -1  
 $EndComp
@@ -699,6 +740,9 @@ F 0 "R60" V 13800 1925 50  0000 C CNN
 F 1 "22" V 13825 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13755 2100 30  0001 C CNN
 F 3 "" H 13825 2100 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "resistor 22 ohms 5%" H 13825 2100 50  0001 C CNN "Description"
+F 6 "SMD" H 13825 2100 50  0001 C CNN "Type"
 	1    13825 2100
 	0    1    1    0   
 $EndComp
@@ -710,6 +754,9 @@ F 0 "R59" V 13775 1825 50  0000 C CNN
 F 1 "22" V 13825 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13755 2000 30  0001 C CNN
 F 3 "" H 13825 2000 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "resistor 22 ohms 5%" H 13825 2000 50  0001 C CNN "Description"
+F 6 "SMD" H 13825 2000 50  0001 C CNN "Type"
 	1    13825 2000
 	0    1    1    0   
 $EndComp
@@ -721,6 +768,9 @@ F 0 "R58" V 13775 1625 50  0000 C CNN
 F 1 "22" V 13825 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13755 1800 30  0001 C CNN
 F 3 "" H 13825 1800 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "resistor 22 ohms 5%" H 13825 1800 50  0001 C CNN "Description"
+F 6 "SMD" H 13825 1800 50  0001 C CNN "Type"
 	1    13825 1800
 	0    1    1    0   
 $EndComp
@@ -928,9 +978,12 @@ L Device:R R61
 U 1 1 5F977BE4
 P 12200 4250
 F 0 "R61" V 12100 4250 50  0000 C CNN
-F 1 "TBD" V 12200 4250 50  0000 C CNN
+F 1 "0" V 12200 4250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12130 4250 30  0001 C CNN
 F 3 "" H 12200 4250 30  0000 C CNN
+F 4 "resistor 0 ohms" V 12200 4250 50  0001 C CNN "Description"
+F 5 "0603" H 12200 4250 50  0001 C CNN "Package"
+F 6 "SMD" H 12200 4250 50  0001 C CNN "Type"
 	1    12200 4250
 	0    1    1    0   
 $EndComp
@@ -939,9 +992,12 @@ L Device:R R62
 U 1 1 5F97845D
 P 12200 4700
 F 0 "R62" V 12100 4700 50  0000 C CNN
-F 1 "TBD" V 12200 4700 50  0000 C CNN
+F 1 "0" V 12200 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12130 4700 30  0001 C CNN
 F 3 "" H 12200 4700 30  0000 C CNN
+F 4 "resistor 0 ohms" V 12200 4700 50  0001 C CNN "Description"
+F 5 "0603" H 12200 4700 50  0001 C CNN "Package"
+F 6 "SMD" H 12200 4700 50  0001 C CNN "Type"
 	1    12200 4700
 	0    1    1    0   
 $EndComp
@@ -970,10 +1026,13 @@ $Comp
 L Device:R R46
 U 1 1 5FA69A0E
 P 14775 9175
-F 0 "R46" V 14750 9000 50  0000 C CNN
+F 0 "R46" V 14725 8975 50  0000 C CNN
 F 1 "20K" V 14775 9175 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14705 9175 30  0001 C CNN
 F 3 "" H 14775 9175 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 14775 9175 50  0001 C CNN "Description"
+F 5 "0603" H 14775 9175 50  0001 C CNN "Package"
+F 6 "SMD" H 14775 9175 50  0001 C CNN "Type"
 	1    14775 9175
 	0    1    1    0   
 $EndComp
@@ -985,10 +1044,13 @@ $Comp
 L Device:R R45
 U 1 1 5FA90420
 P 14775 8950
-F 0 "R45" V 14750 8775 50  0000 C CNN
+F 0 "R45" V 14725 8750 50  0000 C CNN
 F 1 "20K" V 14775 8950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14705 8950 30  0001 C CNN
 F 3 "" H 14775 8950 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 14775 8950 50  0001 C CNN "Description"
+F 5 "0603" H 14775 8950 50  0001 C CNN "Package"
+F 6 "SMD" H 14775 8950 50  0001 C CNN "Type"
 	1    14775 8950
 	0    1    1    0   
 $EndComp
@@ -1034,6 +1096,9 @@ F 0 "R48" V 14475 6550 50  0000 C CNN
 F 1 "20K" V 14500 6725 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14430 6725 30  0001 C CNN
 F 3 "" H 14500 6725 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 14500 6725 50  0001 C CNN "Description"
+F 5 "0603" H 14500 6725 50  0001 C CNN "Package"
+F 6 "SMD" H 14500 6725 50  0001 C CNN "Type"
 	1    14500 6725
 	0    1    1    0   
 $EndComp
@@ -1049,6 +1114,9 @@ F 0 "R47" V 14475 6325 50  0000 C CNN
 F 1 "20K" V 14500 6500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14430 6500 30  0001 C CNN
 F 3 "" H 14500 6500 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 14500 6500 50  0001 C CNN "Description"
+F 5 "0603" H 14500 6500 50  0001 C CNN "Package"
+F 6 "SMD" H 14500 6500 50  0001 C CNN "Type"
 	1    14500 6500
 	0    1    1    0   
 $EndComp
@@ -1155,7 +1223,9 @@ F 0 "C1" V 1000 10725 50  0000 L CNN
 F 1 "100nF" V 1000 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1000 10600 60  0001 C CNN
 F 3 "" H 1000 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 1000 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 1000 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1000 10600 50  0001 C CNN "Type"
 	1    1000 10600
 	-1   0    0    -1  
 $EndComp
@@ -1188,8 +1258,9 @@ F 0 "J7" H 12195 7958 50  0000 R CNN
 F 1 "AUDIOIN" H 12195 8049 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3535NG_Horizontal" H 12475 8025 50  0001 C CNN
 F 3 "~" H 12475 8025 50  0001 C CNN
-F 4 "do not place" H 12475 8025 50  0001 C CNN "do not place"
-F 5 "THT" H 12475 8025 50  0001 C CNN "Package"
+F 4 "do not place" H 12475 8025 50  0001 C CNN "Do Not Place"
+F 5 "PTH" H 12475 8025 50  0001 C CNN "Type"
+F 6 "3.5mm stereo jack" H 12475 8025 50  0001 C CNN "Description"
 	1    12475 8025
 	-1   0    0    1   
 $EndComp
@@ -1220,8 +1291,9 @@ F 0 "J8" H 12045 5483 50  0000 R CNN
 F 1 "AUDIOOUT" H 12045 5574 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3535NG_Horizontal" H 12325 5550 50  0001 C CNN
 F 3 "~" H 12325 5550 50  0001 C CNN
-F 4 "do not place" H 12325 5550 50  0001 C CNN "do not place"
-F 5 "THT" H 12325 5550 50  0001 C CNN "Package"
+F 4 "do not place" H 12325 5550 50  0001 C CNN "Do Not Place"
+F 5 "PTH" H 12325 5550 50  0001 C CNN "Type"
+F 6 "3.5mm stereo jack" H 12325 5550 50  0001 C CNN "Description"
 	1    12325 5550
 	-1   0    0    1   
 $EndComp
@@ -1256,6 +1328,9 @@ F 0 "R22" V 11775 6050 50  0000 C CNN
 F 1 "20K" V 11800 6225 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 11730 6225 30  0001 C CNN
 F 3 "" H 11800 6225 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 11800 6225 50  0001 C CNN "Description"
+F 5 "0603" H 11800 6225 50  0001 C CNN "Package"
+F 6 "SMD" H 11800 6225 50  0001 C CNN "Type"
 	1    11800 6225
 	0    1    1    0   
 $EndComp
@@ -1267,6 +1342,9 @@ F 0 "C21" V 12025 6450 50  0000 L CNN
 F 1 "100nF" V 12175 6275 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12075 6400 50  0001 C CNN
 F 3 "" H 12075 6400 50  0001 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "100nF ceramic capacitor +/- 20% tolerance" H 12075 6400 50  0001 C CNN "Description"
+F 6 "SMD" H 12075 6400 50  0001 C CNN "Type"
 	1    12075 6400
 	1    0    0    1   
 $EndComp
@@ -1278,6 +1356,9 @@ F 0 "C23" V 12350 6275 50  0000 L CNN
 F 1 "100nF" V 12350 5950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12300 6225 50  0001 C CNN
 F 3 "" H 12300 6225 50  0001 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "100nF ceramic capacitor +/- 20% tolerance" H 12300 6225 50  0001 C CNN "Description"
+F 6 "SMD" H 12300 6225 50  0001 C CNN "Type"
 	1    12300 6225
 	0    1    -1   0   
 $EndComp
@@ -1289,6 +1370,9 @@ F 0 "R43" V 12475 6350 50  0000 C CNN
 F 1 "20K" V 12575 6375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12505 6375 30  0001 C CNN
 F 3 "" H 12575 6375 30  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "Resistor 20 Kohms 5% tolerance" H 12575 6375 50  0001 C CNN "Description"
+F 6 "SMD" H 12575 6375 50  0001 C CNN "Type"
 	1    12575 6375
 	1    0    0    -1  
 $EndComp
@@ -1336,6 +1420,9 @@ F 0 "R23" V 11775 6850 50  0000 C CNN
 F 1 "20K" V 11800 7025 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 11730 7025 30  0001 C CNN
 F 3 "" H 11800 7025 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 11800 7025 50  0001 C CNN "Description"
+F 5 "0603" H 11800 7025 50  0001 C CNN "Package"
+F 6 "SMD" H 11800 7025 50  0001 C CNN "Type"
 	1    11800 7025
 	0    1    1    0   
 $EndComp
@@ -1347,6 +1434,9 @@ F 0 "C22" V 12025 7250 50  0000 L CNN
 F 1 "100nF" V 12175 7075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12075 7200 50  0001 C CNN
 F 3 "" H 12075 7200 50  0001 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "100nF ceramic capacitor +/- 20% tolerance" H 12075 7200 50  0001 C CNN "Description"
+F 6 "SMD" H 12075 7200 50  0001 C CNN "Type"
 	1    12075 7200
 	1    0    0    1   
 $EndComp
@@ -1358,6 +1448,9 @@ F 0 "C24" V 12350 7075 50  0000 L CNN
 F 1 "100nF" V 12350 6750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12300 7025 50  0001 C CNN
 F 3 "" H 12300 7025 50  0001 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "100nF ceramic capacitor +/- 20% tolerance" H 12300 7025 50  0001 C CNN "Description"
+F 6 "SMD" H 12300 7025 50  0001 C CNN "Type"
 	1    12300 7025
 	0    1    -1   0   
 $EndComp
@@ -1369,6 +1462,9 @@ F 0 "R44" V 12475 7150 50  0000 C CNN
 F 1 "20K" V 12575 7175 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12505 7175 30  0001 C CNN
 F 3 "" H 12575 7175 30  0000 C CNN
+F 4 "Resistor 20 Kohms 5% tolerance" H 12575 7175 50  0001 C CNN "Description"
+F 5 "0603" H 12575 7175 50  0001 C CNN "Package"
+F 6 "SMD" H 12575 7175 50  0001 C CNN "Type"
 	1    12575 7175
 	1    0    0    -1  
 $EndComp
@@ -1412,10 +1508,11 @@ F 0 "J6" H 10025 9667 50  0000 C CNN
 F 1 "VGA" H 10025 9576 50  0000 C CNN
 F 2 "DSUB15HD:HD15-SN-24" H 9075 9200 50  0001 C CNN
 F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/AHDxxxA-KG-TAxB.pdf" H 9075 9200 50  0001 C CNN
-F 4 "do not place" H 10025 8800 50  0001 C CNN "do not place"
+F 4 "do not place" H 10025 8800 50  0001 C CNN "Do Not Place"
 F 5 "Adam Tech" H 10025 8800 50  0001 C CNN "Manufacturer"
 F 6 "HD15-SN-24" H 10025 8800 50  0001 C CNN "Manufacturer PN"
-F 7 "THT" H 10025 8800 50  0001 C CNN "Package"
+F 7 "PTH" H 10025 8800 50  0001 C CNN "Type"
+F 8 "DB15HD" H 10025 8800 50  0001 C CNN "Description"
 	1    10025 8800
 	1    0    0    -1  
 $EndComp
@@ -1526,6 +1623,9 @@ F 0 "R40" V 9975 4975 50  0000 C CNN
 F 1 "150" V 10050 4975 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10050 4975 50  0001 C CNN
 F 3 "~" H 10050 4975 50  0001 C CNN
+F 4 "resistor 150 ohms 5%" H 10050 4975 50  0001 C CNN "Description"
+F 5 "0603" H 10050 4975 50  0001 C CNN "Package"
+F 6 "SMD" H 10050 4975 50  0001 C CNN "Type"
 	1    10050 4975
 	1    0    0    1   
 $EndComp
@@ -1562,6 +1662,9 @@ F 0 "R41" V 9975 6250 50  0000 C CNN
 F 1 "150" V 10050 6250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10050 6250 50  0001 C CNN
 F 3 "~" H 10050 6250 50  0001 C CNN
+F 4 "resistor 150 ohms 5%" H 10050 6250 50  0001 C CNN "Description"
+F 5 "0603" H 10050 6250 50  0001 C CNN "Package"
+F 6 "SMD" H 10050 6250 50  0001 C CNN "Type"
 	1    10050 6250
 	1    0    0    1   
 $EndComp
@@ -1598,6 +1701,9 @@ F 0 "R42" V 9975 7325 50  0000 C CNN
 F 1 "150" V 10050 7325 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10050 7325 50  0001 C CNN
 F 3 "~" H 10050 7325 50  0001 C CNN
+F 4 "resistor 150 ohms 5%" H 10050 7325 50  0001 C CNN "Description"
+F 5 "0603" H 10050 7325 50  0001 C CNN "Package"
+F 6 "SMD" H 10050 7325 50  0001 C CNN "Type"
 	1    10050 7325
 	1    0    0    1   
 $EndComp
@@ -1677,6 +1783,9 @@ F 0 "C26" H 12685 3395 50  0000 L CNN
 F 1 "10µF" H 12685 3245 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12675 3325 60  0001 C CNN
 F 3 "" H 12675 3325 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "10µF capacitor" H 12675 3325 50  0001 C CNN "Description"
+F 6 "SMD" H 12675 3325 50  0001 C CNN "Type"
 	1    12675 3325
 	1    0    0    -1  
 $EndComp
@@ -1688,6 +1797,9 @@ F 0 "C27" H 13535 3395 50  0000 L CNN
 F 1 "10µF" H 13535 3245 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 13525 3325 60  0001 C CNN
 F 3 "" H 13525 3325 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "10µF capacitor" H 13525 3325 50  0001 C CNN "Description"
+F 6 "SMD" H 13525 3325 50  0001 C CNN "Type"
 	1    13525 3325
 	1    0    0    -1  
 $EndComp
@@ -1755,7 +1867,11 @@ F 0 "D1" H 6400 3950 50  0000 C CNN
 F 1 "POWERLED" H 6275 4025 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 6400 3850 50  0001 C CNN
 F 3 "" H 6400 3850 50  0000 C CNN
-F 4 "Green" H 6400 3850 50  0001 C CNN "Color"
+F 4 "Green LED" H 6400 3850 50  0001 C CNN "Description"
+F 5 "0603" H 6400 3850 50  0001 C CNN "Package"
+F 6 "SMD" H 6400 3850 50  0001 C CNN "Type"
+F 7 "Wurth" H 6400 3850 50  0001 C CNN "Manufacturer"
+F 8 "150060GS75000" H 6400 3850 50  0001 C CNN "Manufacturer PN"
 	1    6400 3850
 	-1   0    0    -1  
 $EndComp
@@ -1775,6 +1891,9 @@ F 0 "R1" V 6175 3750 50  0000 C CNN
 F 1 "220" V 6100 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 3850 50  0001 C CNN
 F 3 "" H 6100 3850 50  0000 C CNN
+F 4 "resistor 220 ohms" H 6100 3850 50  0001 C CNN "Description"
+F 5 "0603" H 6100 3850 50  0001 C CNN "Package"
+F 6 "SMD" H 6100 3850 50  0001 C CNN "Type"
 	1    6100 3850
 	0    -1   -1   0   
 $EndComp
@@ -1833,8 +1952,10 @@ F 0 "J13" H 15245 3039 50  0000 R CNN
 F 1 "USBFS/POWER" H 15675 3425 50  0000 R CNN
 F 2 "Connector_USB:USB_Micro-B_Amphenol_10104110_Horizontal" H 15625 3000 50  0001 C CNN
 F 3 "~" H 15625 3000 50  0001 C CNN
-F 4 "Amphenol" H 15475 3050 50  0001 C CNN "Manufacturer"
+F 4 "Amphenol/FCI" H 15475 3050 50  0001 C CNN "Manufacturer"
 F 5 "10104110-0001LF" H 15475 3050 50  0001 C CNN "Manufacturer PN"
+F 6 "USB Micro B" H 15475 3050 50  0001 C CNN "Description"
+F 7 "SMD" H 15475 3050 50  0001 C CNN "Type"
 	1    15475 3050
 	-1   0    0    -1  
 $EndComp
@@ -1960,6 +2081,11 @@ F 0 "U1" H 3150 611 50  0000 C CNN
 F 1 "STM32H743IITx" H 3150 520 50  0000 C CNN
 F 2 "Package_QFP:LQFP-176_24x24mm_P0.5mm" H 1950 900 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00387108.pdf" H 3150 5200 50  0001 C CNN
+F 4 "STM32H743IITx" H 3150 5200 50  0001 C CNN "Description"
+F 5 "LQFP-176" H 3150 5200 50  0001 C CNN "Package"
+F 6 "SMD" H 3150 5200 50  0001 C CNN "Type"
+F 7 "STMicroelectronics" H 3150 5200 50  0001 C CNN "Manufacturer"
+F 8 "STM32H743IIT6" H 3150 5200 50  0001 C CNN "Manufacturer PN"
 	1    3150 5200
 	1    0    0    -1  
 $EndComp
@@ -1974,6 +2100,9 @@ F 0 "C34" V 875 10650 50  0000 L CNN
 F 1 "4.7µF" V 875 10350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 825 10600 60  0001 C CNN
 F 3 "" H 825 10600 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "4.7µF capacitor" H 825 10600 50  0001 C CNN "Description"
+F 6 "SMD" H 825 10600 50  0001 C CNN "Type"
 	1    825  10600
 	-1   0    0    -1  
 $EndComp
@@ -2020,7 +2149,9 @@ F 0 "C5" V 800 1975 50  0000 C CNN
 F 1 "2.2µF" V 800 2200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 850 2050 50  0001 C CNN
 F 3 "~" H 850 2050 50  0001 C CNN
-F 4 "100 mΩ ESR, 20% tolerance" V 850 2050 50  0001 C CNN "Note"
+F 4 "100 mΩ ESR, 20% tolerance" V 850 2050 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 850 2050 50  0001 C CNN "Type"
 	1    850  2050
 	1    0    0    -1  
 $EndComp
@@ -2032,7 +2163,9 @@ F 0 "C3" V 975 1975 50  0000 C CNN
 F 1 "2.2µF" V 975 2200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1025 2050 50  0001 C CNN
 F 3 "~" H 1025 2050 50  0001 C CNN
-F 4 "100 mΩ ESR, 20% tolerance" V 1025 2050 50  0001 C CNN "Note"
+F 4 "100 mΩ ESR, 20% tolerance" V 1025 2050 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1025 2050 50  0001 C CNN "Type"
 	1    1025 2050
 	1    0    0    -1  
 $EndComp
@@ -2097,8 +2230,9 @@ F 0 "J14" H 11497 10174 50  0000 R CNN
 F 1 "I2S" H 11497 10083 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 11525 10200 50  0001 C CNN
 F 3 "~" H 11525 10200 50  0001 C CNN
-F 4 "do not place" H 11525 10200 50  0001 C CNN "do not place"
-F 5 "THT" H 11525 10200 50  0001 C CNN "Package"
+F 4 "do not place" H 11525 10200 50  0001 C CNN "Do Not Place"
+F 5 "PTH" H 11525 10200 50  0001 C CNN "Type"
+F 6 "1x6 header" H 11525 10200 50  0001 C CNN "Description"
 	1    11525 10200
 	-1   0    0    -1  
 $EndComp
@@ -2138,7 +2272,9 @@ F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 13100 3350 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 13200 2900 50  0001 C CNN
 F 4 "STMicroelectronics" H 13100 3150 50  0001 C CNN "Manufacturer"
 F 5 "LD1117S33TR" H 13100 3150 50  0001 C CNN "Manufacturer PN"
-F 6 "5V in, 3.3V out" H 13100 3150 50  0001 C CNN "Note"
+F 6 "LDO, 5V in, 3.3V out" H 13100 3150 50  0001 C CNN "Description"
+F 7 "SOT-223-3" H 13100 3150 50  0001 C CNN "Package"
+F 8 "SMD" H 13100 3150 50  0001 C CNN "Type"
 	1    13100 3150
 	1    0    0    -1  
 $EndComp
@@ -2240,7 +2376,9 @@ F 0 "C2" V 1175 10725 50  0000 L CNN
 F 1 "100nF" V 1175 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1175 10600 60  0001 C CNN
 F 3 "" H 1175 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 1175 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 1175 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1175 10600 50  0001 C CNN "Type"
 	1    1175 10600
 	-1   0    0    -1  
 $EndComp
@@ -2256,7 +2394,9 @@ F 0 "C4" V 1350 10725 50  0000 L CNN
 F 1 "100nF" V 1350 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1350 10600 60  0001 C CNN
 F 3 "" H 1350 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 1350 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 1350 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1350 10600 50  0001 C CNN "Type"
 	1    1350 10600
 	-1   0    0    -1  
 $EndComp
@@ -2268,7 +2408,9 @@ F 0 "C6" V 1525 10725 50  0000 L CNN
 F 1 "100nF" V 1525 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1525 10600 60  0001 C CNN
 F 3 "" H 1525 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 1525 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 1525 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1525 10600 50  0001 C CNN "Type"
 	1    1525 10600
 	-1   0    0    -1  
 $EndComp
@@ -2280,7 +2422,9 @@ F 0 "C7" V 1700 10725 50  0000 L CNN
 F 1 "100nF" V 1700 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 10600 60  0001 C CNN
 F 3 "" H 1700 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 1700 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 1700 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1700 10600 50  0001 C CNN "Type"
 	1    1700 10600
 	-1   0    0    -1  
 $EndComp
@@ -2292,7 +2436,9 @@ F 0 "C8" V 1875 10725 50  0000 L CNN
 F 1 "100nF" V 1875 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1875 10600 60  0001 C CNN
 F 3 "" H 1875 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 1875 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 1875 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 1875 10600 50  0001 C CNN "Type"
 	1    1875 10600
 	-1   0    0    -1  
 $EndComp
@@ -2304,7 +2450,9 @@ F 0 "C9" V 2050 10725 50  0000 L CNN
 F 1 "100nF" V 2050 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 10600 60  0001 C CNN
 F 3 "" H 2050 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 2050 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 2050 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 2050 10600 50  0001 C CNN "Type"
 	1    2050 10600
 	-1   0    0    -1  
 $EndComp
@@ -2316,7 +2464,9 @@ F 0 "C10" V 2225 10725 50  0000 L CNN
 F 1 "100nF" V 2225 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2225 10600 60  0001 C CNN
 F 3 "" H 2225 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 2225 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 2225 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 2225 10600 50  0001 C CNN "Type"
 	1    2225 10600
 	-1   0    0    -1  
 $EndComp
@@ -2328,7 +2478,9 @@ F 0 "C11" V 2400 10725 50  0000 L CNN
 F 1 "100nF" V 2400 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2400 10600 60  0001 C CNN
 F 3 "" H 2400 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 2400 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 2400 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 2400 10600 50  0001 C CNN "Type"
 	1    2400 10600
 	-1   0    0    -1  
 $EndComp
@@ -2340,7 +2492,9 @@ F 0 "C12" V 2575 10725 50  0000 L CNN
 F 1 "100nF" V 2575 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2575 10600 60  0001 C CNN
 F 3 "" H 2575 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 2575 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 2575 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 2575 10600 50  0001 C CNN "Type"
 	1    2575 10600
 	-1   0    0    -1  
 $EndComp
@@ -2352,7 +2506,9 @@ F 0 "C13" V 2750 10725 50  0000 L CNN
 F 1 "100nF" V 2750 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 10600 60  0001 C CNN
 F 3 "" H 2750 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 2750 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 2750 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 2750 10600 50  0001 C CNN "Type"
 	1    2750 10600
 	-1   0    0    -1  
 $EndComp
@@ -2364,7 +2520,9 @@ F 0 "C14" V 2925 10725 50  0000 L CNN
 F 1 "100nF" V 2925 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2925 10600 60  0001 C CNN
 F 3 "" H 2925 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 2925 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 2925 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 2925 10600 50  0001 C CNN "Type"
 	1    2925 10600
 	-1   0    0    -1  
 $EndComp
@@ -2376,7 +2534,9 @@ F 0 "C15" V 3100 10725 50  0000 L CNN
 F 1 "100nF" V 3100 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 10600 60  0001 C CNN
 F 3 "" H 3100 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 3100 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 3100 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 3100 10600 50  0001 C CNN "Type"
 	1    3100 10600
 	-1   0    0    -1  
 $EndComp
@@ -2388,7 +2548,9 @@ F 0 "C16" V 3275 10725 50  0000 L CNN
 F 1 "100nF" V 3275 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3275 10600 60  0001 C CNN
 F 3 "" H 3275 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 3275 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 3275 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 3275 10600 50  0001 C CNN "Type"
 	1    3275 10600
 	-1   0    0    -1  
 $EndComp
@@ -2400,7 +2562,9 @@ F 0 "C17" V 3925 10725 50  0000 L CNN
 F 1 "100nF" V 3925 10250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3925 10600 60  0001 C CNN
 F 3 "" H 3925 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 3925 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 3925 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 3925 10600 50  0001 C CNN "Type"
 	1    3925 10600
 	-1   0    0    -1  
 $EndComp
@@ -2412,7 +2576,9 @@ F 0 "C31" V 4575 10650 50  0000 L CNN
 F 1 "100nF" V 4600 10350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4525 10600 60  0001 C CNN
 F 3 "" H 4525 10600 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 4525 10600 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 4525 10600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 4525 10600 50  0001 C CNN "Type"
 	1    4525 10600
 	-1   0    0    -1  
 $EndComp
@@ -2508,6 +2674,9 @@ F 0 "C33" V 6350 850 50  0000 L CNN
 F 1 "1µF" V 6350 1075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6300 1025 60  0001 C CNN
 F 3 "" H 6300 1025 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "1µF capacitor" H 6300 1025 50  0001 C CNN "Description"
+F 6 "SMD" H 6300 1025 50  0001 C CNN "Type"
 	1    6300 1025
 	0    1    1    0   
 $EndComp
@@ -2519,7 +2688,9 @@ F 0 "C32" V 6350 1050 50  0000 L CNN
 F 1 "100nF" V 6350 1275 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6300 1225 60  0001 C CNN
 F 3 "" H 6300 1225 60  0000 C CNN
-F 4 "+/- 20% tolerance" V 6300 1225 50  0001 C CNN "Note"
+F 4 "100nF ceramic capacitor +/- 20% tolerance" V 6300 1225 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 6300 1225 50  0001 C CNN "Type"
 	1    6300 1225
 	0    1    1    0   
 $EndComp
@@ -2542,6 +2713,9 @@ F 0 "R13" V 6380 825 50  0000 C CNN
 F 1 "47" V 6300 825 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 825 30  0001 C CNN
 F 3 "" H 6300 825 30  0000 C CNN
+F 4 "resistor 47 ohms 5%" H 6300 825 50  0001 C CNN "Description"
+F 5 "0603" H 6300 825 50  0001 C CNN "Package"
+F 6 "SMD" H 6300 825 50  0001 C CNN "Type"
 	1    6300 825 
 	0    1    1    0   
 $EndComp
@@ -2619,10 +2793,13 @@ $Comp
 L Device:C_Small C29
 U 1 1 56BA50E4
 P 12800 4250
-F 0 "C29" H 12825 4175 50  0000 L CNN
-F 1 "TBD" H 12625 4175 50  0000 L CNN
+F 0 "C29" H 12825 4325 50  0000 L CNN
+F 1 "5.1pF" H 12675 4175 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12800 4250 60  0001 C CNN
 F 3 "" H 12800 4250 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "5.1pF ceramic, +/- 5% tolerance" H 12800 4250 50  0001 C CNN "Description"
+F 6 "SMD" H 12800 4250 50  0001 C CNN "Type"
 	1    12800 4250
 	0    1    -1   0   
 $EndComp
@@ -2720,7 +2897,9 @@ F 0 "R6" V 5850 9700 50  0000 C CNN
 F 1 "430" V 5925 9700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 9700 50  0001 C CNN
 F 3 "" H 5925 9700 50  0001 C CNN
-F 4 "1%" V 5925 9700 50  0001 C CNN "Note"
+F 4 "Resistor 430 ohms 1%" V 5925 9700 50  0001 C CNN "Description"
+F 5 "0603" H 5925 9700 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 9700 50  0001 C CNN "Type"
 	1    5925 9700
 	0    1    1    0   
 $EndComp
@@ -2734,7 +2913,9 @@ F 0 "R7" V 5850 9900 50  0000 C CNN
 F 1 "860" V 5925 9900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 9900 50  0001 C CNN
 F 3 "" H 5925 9900 50  0001 C CNN
-F 4 "1%" V 5925 9900 50  0001 C CNN "Note"
+F 4 "Resistor 860 ohms 1%" V 5925 9900 50  0001 C CNN "Description"
+F 5 "0603" H 5925 9900 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 9900 50  0001 C CNN "Type"
 	1    5925 9900
 	0    1    1    0   
 $EndComp
@@ -2748,7 +2929,9 @@ F 0 "R8" V 5850 10100 50  0000 C CNN
 F 1 "1.7k" V 5925 10100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 10100 50  0001 C CNN
 F 3 "" H 5925 10100 50  0001 C CNN
-F 4 "1%" V 5925 10100 50  0001 C CNN "Note"
+F 4 "Resistor 1.7 Kohms 1%" V 5925 10100 50  0001 C CNN "Description"
+F 5 "0603" H 5925 10100 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 10100 50  0001 C CNN "Type"
 	1    5925 10100
 	0    1    1    0   
 $EndComp
@@ -2762,7 +2945,9 @@ F 0 "R9" V 5850 10300 50  0000 C CNN
 F 1 "3.4k" V 5925 10300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 10300 50  0001 C CNN
 F 3 "" H 5925 10300 50  0001 C CNN
-F 4 "5%" V 5925 10300 50  0001 C CNN "Note"
+F 4 "Resistor 4.3Kohms 5%" V 5925 10300 50  0001 C CNN "Description"
+F 5 "0603" H 5925 10300 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 10300 50  0001 C CNN "Type"
 	1    5925 10300
 	0    1    1    0   
 $EndComp
@@ -2776,7 +2961,9 @@ F 0 "R10" V 5850 10500 50  0000 C CNN
 F 1 "6.9k" V 5925 10500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 10500 50  0001 C CNN
 F 3 "" H 5925 10500 50  0001 C CNN
-F 4 "5%" V 5925 10500 50  0001 C CNN "Note"
+F 4 "Resistor 6.9 Kohms 5%" V 5925 10500 50  0001 C CNN "Description"
+F 5 "0603" H 5925 10500 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 10500 50  0001 C CNN "Type"
 	1    5925 10500
 	0    1    1    0   
 $EndComp
@@ -2790,7 +2977,9 @@ F 0 "R11" V 5850 10700 50  0000 C CNN
 F 1 "14k" V 5925 10700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 10700 50  0001 C CNN
 F 3 "" H 5925 10700 50  0001 C CNN
-F 4 "5%" V 5925 10700 50  0001 C CNN "Note"
+F 4 "Resistor 14 Kohms 5%" V 5925 10700 50  0001 C CNN "Description"
+F 5 "0603" H 5925 10700 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 10700 50  0001 C CNN "Type"
 	1    5925 10700
 	0    1    1    0   
 $EndComp
@@ -2804,7 +2993,9 @@ F 0 "R12" V 5850 10900 50  0000 C CNN
 F 1 "28K" V 5925 10900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 10900 50  0001 C CNN
 F 3 "" H 5925 10900 50  0001 C CNN
-F 4 "5%" V 5925 10900 50  0001 C CNN "Note"
+F 4 "Resistor 28 Kohms 5%" V 5925 10900 50  0001 C CNN "Description"
+F 5 "0603" H 5925 10900 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 10900 50  0001 C CNN "Type"
 	1    5925 10900
 	0    1    1    0   
 $EndComp
@@ -2893,6 +3084,9 @@ F 0 "C35" V 3800 10425 50  0000 L CNN
 F 1 "1µF" V 3800 10650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3750 10600 60  0001 C CNN
 F 3 "" H 3750 10600 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "1µF capacitor" H 3750 10600 50  0001 C CNN "Description"
+F 6 "SMD" H 3750 10600 50  0001 C CNN "Type"
 	1    3750 10600
 	-1   0    0    1   
 $EndComp
@@ -2952,10 +3146,14 @@ $Comp
 L LED:WS2812B D4
 U 1 1 60594E21
 P 6900 2750
-F 0 "D4" H 6700 3025 50  0000 L CNN
+F 0 "D4" H 6575 2950 50  0000 L CNN
 F 1 "RGBLED1" H 6475 2500 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6950 2450 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7000 2375 50  0001 L TNN
+F 4 "WS2812B" H 6900 2750 50  0001 C CNN "Description"
+F 5 "SMD" H 6900 2750 50  0001 C CNN "Type"
+F 6 "Worldsemi" H 6900 2750 50  0001 C CNN "Manufacturer"
+F 7 "WS2812B" H 6900 2750 50  0001 C CNN "Manufacturer PN"
 	1    6900 2750
 	1    0    0    -1  
 $EndComp
@@ -3040,8 +3238,9 @@ F 0 "J1" H 7800 8550 50  0000 C CNN
 F 1 "ESP_01" H 7800 8641 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 7750 8975 50  0001 C CNN
 F 3 "~" H 7750 8975 50  0001 C CNN
-F 4 "do not place" H 7750 8975 50  0001 C CNN "do not place"
-F 5 "THT" H 7750 8975 50  0001 C CNN "Package"
+F 4 "do not place" H 7750 8975 50  0001 C CNN "Do Not Place"
+F 5 "PTH" H 7750 8975 50  0001 C CNN "Type"
+F 6 "2x4 header" H 7750 8975 50  0001 C CNN "Description"
 	1    7750 8975
 	1    0    0    1   
 $EndComp
@@ -3100,9 +3299,10 @@ F 0 "J2" H 8400 11075 50  0000 C CNN
 F 1 "SWD" H 8400 10475 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 8400 9575 50  0001 C CNN
 F 3 "" H 8400 9575 50  0001 C CNN
-F 4 "SMT" H 8400 10775 50  0001 C CNN "Package"
+F 4 "SMD" H 8400 10775 50  0001 C CNN "Type"
 F 5 "Amphenol" H 8400 10775 50  0001 C CNN "Manufacturer"
 F 6 "20021521-00010C1LF" H 8400 10775 50  0001 C CNN "Manufacturer PN"
+F 7 "2x5 1.27mm header" H 8400 10775 50  0001 C CNN "Description"
 	1    8400 10775
 	1    0    0    -1  
 $EndComp
@@ -3124,7 +3324,9 @@ F 0 "C19" V 6525 6700 50  0000 L CNN
 F 1 "70nF" V 6525 6300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6525 6600 60  0001 C CNN
 F 3 "" H 6525 6600 60  0000 C CNN
-F 4 "ceramic" V 6525 6600 50  0001 C CNN "Note"
+F 4 "70nF ceramic capacitor" V 6525 6600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 6525 6600 50  0001 C CNN "Type"
 	1    6525 6600
 	-1   0    0    -1  
 $EndComp
@@ -3136,7 +3338,9 @@ F 0 "C18" V 6375 6650 50  0000 L CNN
 F 1 "70nF" V 6400 6375 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6325 6600 60  0001 C CNN
 F 3 "" H 6325 6600 60  0000 C CNN
-F 4 "ceramic" V 6325 6600 50  0001 C CNN "Note"
+F 4 "70nF ceramic capacitor" V 6325 6600 50  0001 C CNN "Description"
+F 5 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 6 "SMD" H 6325 6600 50  0001 C CNN "Type"
 	1    6325 6600
 	-1   0    0    -1  
 $EndComp
@@ -3261,6 +3465,11 @@ F 0 "U2" H 8175 8025 50  0000 C CNN
 F 1 "W9812G6KH-6" H 8200 8125 50  0000 C CNN
 F 2 "Package_SO:TSOP-II-54_22.2x10.16mm_P0.8mm" H 7850 6450 50  0001 C CNN
 F 3 "https://www.winbond.com/resource-files/da00-w9812g6khc1.pdf" H 7350 8000 50  0001 C CNN
+F 4 "128MB 167MHz TSOP-II-54 SDRAM" H 7750 6750 50  0001 C CNN "Description"
+F 5 "TSOP-II-54" H 7750 6750 50  0001 C CNN "Package"
+F 6 "SMD" H 7750 6750 50  0001 C CNN "Type"
+F 7 "Winbond" H 7750 6750 50  0001 C CNN "Manufacturer"
+F 8 "W9812G6KH-6" H 7750 6750 50  0001 C CNN "Manufacturer PN"
 	1    7750 6750
 	1    0    0    -1  
 $EndComp
@@ -3308,6 +3517,9 @@ F 0 "R21" H 6409 5221 50  0000 L CNN
 F 1 "10K" H 6409 5130 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6350 5175 50  0001 C CNN
 F 3 "~" H 6350 5175 50  0001 C CNN
+F 4 "Resistor 10 Kohms 5% tolerance" H 6350 5175 50  0001 C CNN "Description"
+F 5 "0603" H 6350 5175 50  0001 C CNN "Package"
+F 6 "SMD" H 6350 5175 50  0001 C CNN "Type"
 	1    6350 5175
 	1    0    0    -1  
 $EndComp
@@ -3326,7 +3538,8 @@ F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 6100 5200 50  0001 C CNN
 F 3 "~" H 6100 5200 50  0001 C CNN
 F 4 "C&K" H 6100 5000 50  0001 C CNN "Manufacturer"
 F 5 "PTS645SM70SMTR92" H 6100 5000 50  0001 C CNN "Manufacturer PN"
-F 6 "Or any SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB, BLUE IF POSSIBLE" H 6100 5000 50  0001 C CNN "Note"
+F 6 "SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB" H 6100 5000 50  0001 C CNN "Description"
+F 7 "SMD" H 6100 5000 50  0001 C CNN "Type"
 	1    6100 5000
 	1    0    0    -1  
 $EndComp
@@ -3399,7 +3612,8 @@ F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7900 4650 50  0001 C CNN
 F 3 "~" H 7900 4650 50  0001 C CNN
 F 4 "C&K" H 7900 4450 50  0001 C CNN "Manufacturer"
 F 5 "PTS645SM70SMTR92" H 7900 4450 50  0001 C CNN "Manufacturer PN"
-F 6 "Or any SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB, BLACK IF POSSIBLE" H 7900 4450 50  0001 C CNN "Note"
+F 6 "SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB" H 7900 4450 50  0001 C CNN "Description"
+F 7 "SMD" H 7900 4450 50  0001 C CNN "Type"
 	1    7900 4450
 	1    0    0    -1  
 $EndComp
@@ -3417,7 +3631,8 @@ F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7900 4375 50  0001 C CNN
 F 3 "~" H 7900 4375 50  0001 C CNN
 F 4 "C&K" H 7900 4175 50  0001 C CNN "Manufacturer"
 F 5 "PTS645SM70SMTR92" H 7900 4175 50  0001 C CNN "Manufacturer PN"
-F 6 "Or any SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB, BLACK IF POSSIBLE" H 7900 4175 50  0001 C CNN "Note"
+F 6 "SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB" H 7900 4175 50  0001 C CNN "Description"
+F 7 "SMD" H 7900 4175 50  0001 C CNN "Type"
 	1    7900 4175
 	1    0    0    -1  
 $EndComp
@@ -3437,7 +3652,8 @@ F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7900 4100 50  0001 C CNN
 F 3 "~" H 7900 4100 50  0001 C CNN
 F 4 "C&K" H 7900 3900 50  0001 C CNN "Manufacturer"
 F 5 "PTS645SM70SMTR92" H 7900 3900 50  0001 C CNN "Manufacturer PN"
-F 6 "Or any SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB, BLACK IF POSSIBLE" H 7900 3900 50  0001 C CNN "Note"
+F 6 "SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB" H 7900 3900 50  0001 C CNN "Description"
+F 7 "SMD" H 7900 3900 50  0001 C CNN "Type"
 	1    7900 3900
 	1    0    0    -1  
 $EndComp
@@ -3455,7 +3671,8 @@ F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7900 4925 50  0001 C CNN
 F 3 "~" H 7900 4925 50  0001 C CNN
 F 4 "C&K" H 7900 4725 50  0001 C CNN "Manufacturer"
 F 5 "PTS645SM70SMTR92" H 7900 4725 50  0001 C CNN "Manufacturer PN"
-F 6 "Or any SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB, RED IF POSSIBLE" H 7900 4725 50  0001 C CNN "Note"
+F 6 "SMT J TACTILE SPST 130-200gpf 4mm-10mm above PCB" H 7900 4725 50  0001 C CNN "Description"
+F 7 "SMD" H 7900 4725 50  0001 C CNN "Type"
 	1    7900 4725
 	1    0    0    -1  
 $EndComp
@@ -3469,9 +3686,13 @@ U 1 1 6126E915
 P 6175 2650
 F 0 "Q1" V 6410 2650 50  0000 C CNN
 F 1 "Q_NPN_CBE" V 6501 2650 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6375 2750 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 6375 2750 50  0001 C CNN
 F 3 "~" H 6175 2650 50  0001 C CNN
-F 4 "NPN" V 6175 2650 50  0001 C CNN "Note"
+F 4 "NPN transistor" V 6175 2650 50  0001 C CNN "Description"
+F 5 "SMD" H 6175 2650 50  0001 C CNN "Type"
+F 6 "ON Semiconductor" V 6175 2650 50  0001 C CNN "Manufacturer"
+F 7 "MMBT3904WT1G" V 6175 2650 50  0001 C CNN "Manufacturer PN"
+F 8 "SOT-323_SC-70" H 6175 2650 50  0001 C CNN "Package"
 	1    6175 2650
 	0    1    1    0   
 $EndComp
@@ -3488,6 +3709,9 @@ F 0 "R2" V 6250 2200 50  0000 C CNN
 F 1 "2.2k" V 6175 2300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6105 2300 50  0001 C CNN
 F 3 "" H 6175 2300 50  0000 C CNN
+F 4 "resistor 2.2K 5%" H 6175 2300 50  0001 C CNN "Description"
+F 5 "0603" H 6175 2300 50  0001 C CNN "Package"
+F 6 "SMD" H 6175 2300 50  0001 C CNN "Type"
 	1    6175 2300
 	-1   0    0    1   
 $EndComp
@@ -3510,6 +3734,9 @@ F 0 "R3" V 6500 2500 50  0000 C CNN
 F 1 "6.8k" V 6425 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6355 2600 50  0001 C CNN
 F 3 "" H 6425 2600 50  0000 C CNN
+F 4 "Resistor 6.8K 5%" H 6425 2600 50  0001 C CNN "Description"
+F 5 "0603" H 6425 2600 50  0001 C CNN "Package"
+F 6 "SMD" H 6425 2600 50  0001 C CNN "Type"
 	1    6425 2600
 	-1   0    0    1   
 $EndComp
@@ -3537,6 +3764,9 @@ F 0 "C36" V 7600 1000 50  0000 L CNN
 F 1 "1µF" V 7600 1225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7550 1175 60  0001 C CNN
 F 3 "" H 7550 1175 60  0000 C CNN
+F 4 "0603" H 12150 1900 60  0001 L CNN "Package"
+F 5 "1µF capacitor" H 7550 1175 50  0001 C CNN "Description"
+F 6 "SMD" H 7550 1175 50  0001 C CNN "Type"
 	1    7550 1175
 	-1   0    0    1   
 $EndComp
@@ -3560,7 +3790,11 @@ F 0 "D2" H 6400 4200 50  0000 C CNN
 F 1 "DEBUGLED" H 6375 3950 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 6400 4100 50  0001 C CNN
 F 3 "" H 6400 4100 50  0000 C CNN
-F 4 "Red" H 6400 4100 50  0001 C CNN "Color"
+F 4 "Red LED" H 6400 4100 50  0001 C CNN "Description"
+F 5 "0603" H 6400 4100 50  0001 C CNN "Package"
+F 6 "SMD" H 6400 4100 50  0001 C CNN "Type"
+F 7 "Wurth" H 6400 4100 50  0001 C CNN "Manufacturer"
+F 8 "150060RS75000" H 6400 4100 50  0001 C CNN "Manufacturer PN"
 	1    6400 4100
 	-1   0    0    -1  
 $EndComp
@@ -3572,6 +3806,9 @@ F 0 "R4" V 6175 4000 50  0000 C CNN
 F 1 "220" V 6100 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 4100 50  0001 C CNN
 F 3 "" H 6100 4100 50  0000 C CNN
+F 4 "resistor 220 ohms" H 6100 4100 50  0001 C CNN "Description"
+F 5 "0603" H 6100 4100 50  0001 C CNN "Package"
+F 6 "SMD" H 6100 4100 50  0001 C CNN "Type"
 	1    6100 4100
 	0    -1   -1   0   
 $EndComp
@@ -3599,8 +3836,9 @@ F 0 "J16" H 12475 9642 50  0000 C CNN
 F 1 "EXPHDR" H 12475 9551 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 12425 9225 50  0001 C CNN
 F 3 "~" H 12425 9225 50  0001 C CNN
-F 4 "do not place" H 12425 9225 50  0001 C CNN "do not place"
-F 5 "THT" H 12425 9225 50  0001 C CNN "Package"
+F 4 "do not place" H 12425 9225 50  0001 C CNN "Do Not Place"
+F 5 "PTH" H 12425 9225 50  0001 C CNN "Type"
+F 6 "2x5 header" H 12425 9225 50  0001 C CNN "Description"
 	1    12425 9225
 	1    0    0    -1  
 $EndComp
@@ -3637,7 +3875,9 @@ F 0 "J15" H 8972 2774 50  0000 R CNN
 F 1 "NEOPIXEL" H 8972 2683 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9000 2750 50  0001 C CNN
 F 3 "~" H 9000 2750 50  0001 C CNN
-F 4 "do not place" H 9000 2750 50  0001 C CNN "do not place"
+F 4 "do not place" H 9000 2750 50  0001 C CNN "Do Not Place"
+F 5 "1x3 header" H 9000 2750 50  0001 C CNN "Description"
+F 6 "PTH" H 9000 2750 50  0001 C CNN "Type"
 	1    9000 2750
 	-1   0    0    -1  
 $EndComp
@@ -3651,10 +3891,14 @@ $Comp
 L LED:WS2812B D5
 U 1 1 60C6A6D5
 P 7575 2750
-F 0 "D5" H 7275 2950 50  0000 L CNN
+F 0 "D5" H 7250 2950 50  0000 L CNN
 F 1 "RGBLED2" H 7150 2500 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7625 2450 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7675 2375 50  0001 L TNN
+F 4 "WS2812B" H 7575 2750 50  0001 C CNN "Description"
+F 5 "SMD" H 7575 2750 50  0001 C CNN "Type"
+F 6 "Worldsemi" H 7575 2750 50  0001 C CNN "Manufacturer"
+F 7 "WS2812B" H 7575 2750 50  0001 C CNN "Manufacturer PN"
 	1    7575 2750
 	1    0    0    -1  
 $EndComp
@@ -3668,10 +3912,14 @@ $Comp
 L LED:WS2812B D6
 U 1 1 60C6B63E
 P 8250 2750
-F 0 "D6" H 7950 2925 50  0000 L CNN
+F 0 "D6" H 7925 2950 50  0000 L CNN
 F 1 "RGBLED3" H 7825 2500 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8300 2450 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8350 2375 50  0001 L TNN
+F 4 "WS2812B" H 8250 2750 50  0001 C CNN "Description"
+F 5 "SMD" H 8250 2750 50  0001 C CNN "Type"
+F 6 "Worldsemi" H 8250 2750 50  0001 C CNN "Manufacturer"
+F 7 "WS2812B" H 8250 2750 50  0001 C CNN "Manufacturer PN"
 	1    8250 2750
 	1    0    0    -1  
 $EndComp
@@ -3692,11 +3940,6 @@ Wire Wire Line
 Connection ~ 6425 2750
 Wire Wire Line
 	6425 2750 6600 2750
-Connection ~ 6325 10750
-Wire Wire Line
-	6325 10750 6325 10850
-Wire Wire Line
-	6325 10400 6325 10550
 $Comp
 L ColecoHat2-rescue:R R5
 U 1 1 5F5D3678
@@ -3705,7 +3948,9 @@ F 0 "R5" V 5850 9500 50  0000 C CNN
 F 1 "215" V 5925 9500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 9500 50  0001 C CNN
 F 3 "" H 5925 9500 50  0001 C CNN
-F 4 ".5%" V 5925 9500 50  0001 C CNN "Note"
+F 4 "Resistor 215 ohms 0.5%" V 5925 9500 50  0001 C CNN "Description"
+F 5 "0603" H 5925 9500 50  0001 C CNN "Package"
+F 6 "SMD" H 5925 9500 50  0001 C CNN "Type"
 	1    5925 9500
 	0    1    1    0   
 $EndComp
@@ -3721,7 +3966,9 @@ F 0 "R30" V 9800 5925 50  0000 C CNN
 F 1 "8.6k" V 9850 6075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 6075 30  0001 C CNN
 F 3 "~" H 9850 6075 30  0000 C CNN
-F 4 "5% tolerance" V 9850 6075 50  0001 C CNN "Note"
+F 4 "Resistor 8.6 Kohms 5% tolerance" V 9850 6075 50  0001 C CNN "Description"
+F 5 "0603" H 9850 6075 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 6075 50  0001 C CNN "Type"
 	1    9850 6075
 	0    1    1    0   
 $EndComp
@@ -3733,7 +3980,9 @@ F 0 "R29" V 9800 5800 50  0000 C CNN
 F 1 "4.3k" V 9850 5950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 5950 30  0001 C CNN
 F 3 "~" H 9850 5950 30  0000 C CNN
-F 4 "2% tolerance" V 9850 5950 50  0001 C CNN "Note"
+F 4 "Resistor 4.3 Kohms 2% tolerance" V 9850 5950 50  0001 C CNN "Description"
+F 5 "0603" H 9850 5950 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 5950 50  0001 C CNN "Type"
 	1    9850 5950
 	0    1    1    0   
 $EndComp
@@ -3745,7 +3994,9 @@ F 0 "R28" V 9800 5675 50  0000 C CNN
 F 1 "2.2k" V 9850 5825 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 5825 30  0001 C CNN
 F 3 "~" H 9850 5825 30  0000 C CNN
-F 4 "1% tolerance" V 9850 5825 50  0001 C CNN "Note"
+F 4 "Resistor 2.2 Kohms 1% tolerance" V 9850 5825 50  0001 C CNN "Description"
+F 5 "0603" H 9850 5825 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 5825 50  0001 C CNN "Type"
 	1    9850 5825
 	0    1    1    0   
 $EndComp
@@ -3757,7 +4008,9 @@ F 0 "R27" V 9800 5550 50  0000 C CNN
 F 1 "1100" V 9850 5700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 5700 30  0001 C CNN
 F 3 "~" H 9850 5700 30  0000 C CNN
-F 4 "1% tolerance" V 9850 5700 50  0001 C CNN "Note"
+F 4 "Resistor 1100 ohms 1% tolerance" V 9850 5700 50  0001 C CNN "Description"
+F 5 "0603" H 9850 5700 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 5700 50  0001 C CNN "Type"
 	1    9850 5700
 	0    1    1    0   
 $EndComp
@@ -3769,7 +4022,9 @@ F 0 "R26" V 9800 5425 50  0000 C CNN
 F 1 "560" V 9850 5575 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 5575 30  0001 C CNN
 F 3 "~" H 9850 5575 30  0000 C CNN
-F 4 "1% tolerance" V 9850 5575 50  0001 C CNN "Note"
+F 4 "Resistor 560 ohms 1% tolerance" V 9850 5575 50  0001 C CNN "Description"
+F 5 "0603" H 9850 5575 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 5575 50  0001 C CNN "Type"
 	1    9850 5575
 	0    1    1    0   
 $EndComp
@@ -3781,7 +4036,9 @@ F 0 "R25" V 9800 5300 50  0000 C CNN
 F 1 "270" V 9850 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 5450 30  0001 C CNN
 F 3 "~" H 9850 5450 30  0000 C CNN
-F 4 ".5% tolerance" V 9850 5450 50  0001 C CNN "Note"
+F 4 "Resistor 270 ohms 0.5% tolerance" V 9850 5450 50  0001 C CNN "Description"
+F 5 "0603" H 9850 5450 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 5450 50  0001 C CNN "Type"
 	1    9850 5450
 	0    1    1    0   
 $EndComp
@@ -3839,7 +4096,9 @@ F 0 "R24" V 9800 4700 50  0000 C CNN
 F 1 "4.3k" V 9850 4850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 4850 30  0001 C CNN
 F 3 "~" H 9850 4850 30  0000 C CNN
-F 4 "2% tolerance" V 9850 4850 50  0001 C CNN "Note"
+F 4 "Resistor 4.3 Kohms 2% tolerance" V 9850 4850 50  0001 C CNN "Description"
+F 5 "0603" H 9850 4850 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 4850 50  0001 C CNN "Type"
 	1    9850 4850
 	0    1    1    0   
 $EndComp
@@ -3851,7 +4110,9 @@ F 0 "R20" V 9800 4575 50  0000 C CNN
 F 1 "2.2k" V 9850 4725 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 4725 30  0001 C CNN
 F 3 "~" H 9850 4725 30  0000 C CNN
-F 4 "1% tolerance" V 9850 4725 50  0001 C CNN "Note"
+F 4 "Resistor 2.2 Kohms 1% tolerance" V 9850 4725 50  0001 C CNN "Description"
+F 5 "0603" H 9850 4725 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 4725 50  0001 C CNN "Type"
 	1    9850 4725
 	0    1    1    0   
 $EndComp
@@ -3863,7 +4124,9 @@ F 0 "R19" V 9800 4450 50  0000 C CNN
 F 1 "1100" V 9850 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 4600 30  0001 C CNN
 F 3 "~" H 9850 4600 30  0000 C CNN
-F 4 "1% tolerance" V 9850 4600 50  0001 C CNN "Note"
+F 4 "Resistor 1100 ohms 1% tolerance" V 9850 4600 50  0001 C CNN "Description"
+F 5 "0603" H 9850 4600 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 4600 50  0001 C CNN "Type"
 	1    9850 4600
 	0    1    1    0   
 $EndComp
@@ -3875,7 +4138,9 @@ F 0 "R18" V 9800 4325 50  0000 C CNN
 F 1 "560" V 9850 4475 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 4475 30  0001 C CNN
 F 3 "~" H 9850 4475 30  0000 C CNN
-F 4 "1% tolerance" V 9850 4475 50  0001 C CNN "Note"
+F 4 "Resistor 560 ohms 1% tolerance" V 9850 4475 50  0001 C CNN "Description"
+F 5 "0603" H 9850 4475 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 4475 50  0001 C CNN "Type"
 	1    9850 4475
 	0    1    1    0   
 $EndComp
@@ -3887,7 +4152,9 @@ F 0 "R17" V 9800 4200 50  0000 C CNN
 F 1 "270" V 9850 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 4350 30  0001 C CNN
 F 3 "~" H 9850 4350 30  0000 C CNN
-F 4 ".5% tolerance" V 9850 4350 50  0001 C CNN "Note"
+F 4 "Resistor 270 ohms 0.5% tolerance" V 9850 4350 50  0001 C CNN "Description"
+F 5 "0603" H 9850 4350 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 4350 50  0001 C CNN "Type"
 	1    9850 4350
 	0    1    1    0   
 $EndComp
@@ -3932,7 +4199,9 @@ F 0 "R35" V 9800 7050 50  0000 C CNN
 F 1 "4.3k" V 9850 7200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 7200 30  0001 C CNN
 F 3 "~" H 9850 7200 30  0000 C CNN
-F 4 "2% tolerance" V 9850 7200 50  0001 C CNN "Note"
+F 4 "Resistor 4.3 Kohms 2% tolerance" V 9850 7200 50  0001 C CNN "Description"
+F 5 "0603" H 9850 7200 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 7200 50  0001 C CNN "Type"
 	1    9850 7200
 	0    1    1    0   
 $EndComp
@@ -3944,7 +4213,9 @@ F 0 "R34" V 9800 6925 50  0000 C CNN
 F 1 "2.2k" V 9850 7075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 7075 30  0001 C CNN
 F 3 "~" H 9850 7075 30  0000 C CNN
-F 4 "1% tolerance" V 9850 7075 50  0001 C CNN "Note"
+F 4 "Resistor 2.2 Kohms 1% tolerance" V 9850 7075 50  0001 C CNN "Description"
+F 5 "0603" H 9850 7075 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 7075 50  0001 C CNN "Type"
 	1    9850 7075
 	0    1    1    0   
 $EndComp
@@ -3956,7 +4227,9 @@ F 0 "R33" V 9800 6800 50  0000 C CNN
 F 1 "1100" V 9850 6950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 6950 30  0001 C CNN
 F 3 "~" H 9850 6950 30  0000 C CNN
-F 4 "1% tolerance" V 9850 6950 50  0001 C CNN "Note"
+F 4 "Resistor 1100 ohms 1% tolerance" V 9850 6950 50  0001 C CNN "Description"
+F 5 "0603" H 9850 6950 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 6950 50  0001 C CNN "Type"
 	1    9850 6950
 	0    1    1    0   
 $EndComp
@@ -3968,7 +4241,9 @@ F 0 "R32" V 9800 6675 50  0000 C CNN
 F 1 "560" V 9850 6825 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 6825 30  0001 C CNN
 F 3 "~" H 9850 6825 30  0000 C CNN
-F 4 "1% tolerance" V 9850 6825 50  0001 C CNN "Note"
+F 4 "Resistor 560 ohms 1% tolerance" V 9850 6825 50  0001 C CNN "Description"
+F 5 "0603" H 9850 6825 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 6825 50  0001 C CNN "Type"
 	1    9850 6825
 	0    1    1    0   
 $EndComp
@@ -3980,7 +4255,9 @@ F 0 "R31" V 9800 6550 50  0000 C CNN
 F 1 "270" V 9850 6700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 6700 30  0001 C CNN
 F 3 "~" H 9850 6700 30  0000 C CNN
-F 4 ".5% tolerance" V 9850 6700 50  0001 C CNN "Note"
+F 4 "Resistor 270 ohms 0.5% tolerance" V 9850 6700 50  0001 C CNN "Description"
+F 5 "0603" H 9850 6700 50  0001 C CNN "Package"
+F 6 "SMD" H 9850 6700 50  0001 C CNN "Type"
 	1    9850 6700
 	0    1    1    0   
 $EndComp
@@ -4041,10 +4318,13 @@ $Comp
 L Device:R R39
 U 1 1 6014C944
 P 15300 4225
-F 0 "R39" V 15275 4050 50  0000 C CNN
+F 0 "R39" V 15200 4225 50  0000 C CNN
 F 1 "10K" V 15300 4225 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 15230 4225 30  0001 C CNN
 F 3 "" H 15300 4225 30  0000 C CNN
+F 4 "Resistor 10 Kohms 5% tolerance" H 15300 4225 50  0001 C CNN "Description"
+F 5 "0603" H 15300 4225 50  0001 C CNN "Package"
+F 6 "SMD" H 15300 4225 50  0001 C CNN "Type"
 	1    15300 4225
 	-1   0    0    1   
 $EndComp
@@ -4058,6 +4338,9 @@ F 0 "R37" V 14050 5150 50  0000 C CNN
 F 1 "10K" V 14150 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14080 5250 30  0001 C CNN
 F 3 "" H 14150 5250 30  0000 C CNN
+F 4 "Resistor 10 Kohms 5% tolerance" H 14150 5250 50  0001 C CNN "Description"
+F 5 "0603" H 14150 5250 50  0001 C CNN "Package"
+F 6 "SMD" H 14150 5250 50  0001 C CNN "Type"
 	1    14150 5250
 	1    0    0    1   
 $EndComp
@@ -4065,10 +4348,13 @@ $Comp
 L Device:R R16
 U 1 1 6029776E
 P 14275 5600
-F 0 "R16" V 14350 5500 50  0000 C CNN
+F 0 "R16" V 14175 5600 50  0000 C CNN
 F 1 "10K" V 14275 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14205 5600 30  0001 C CNN
 F 3 "" H 14275 5600 30  0000 C CNN
+F 4 "Resistor 10 Kohms 5% tolerance" H 14275 5600 50  0001 C CNN "Description"
+F 5 "0603" H 14275 5600 50  0001 C CNN "Package"
+F 6 "SMD" H 14275 5600 50  0001 C CNN "Type"
 	1    14275 5600
 	1    0    0    1   
 $EndComp
@@ -4087,6 +4373,9 @@ F 0 "H1" H 6950 1900 50  0000 L CNN
 F 1 "HOLE0" H 6950 2125 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7075 1950 50  0001 C CNN
 F 3 "~" H 7075 1950 50  0001 C CNN
+F 4 "do not place" H 7075 1950 50  0001 C CNN "Do Not Place"
+F 5 "mounting hole" H 7075 1950 50  0001 C CNN "Description"
+F 6 "PTH" H 7075 1950 50  0001 C CNN "Type"
 	1    7075 1950
 	1    0    0    -1  
 $EndComp
@@ -4098,6 +4387,9 @@ F 0 "H2" H 7225 1900 50  0000 L CNN
 F 1 "HOLE1" H 7225 2125 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7350 1950 50  0001 C CNN
 F 3 "~" H 7350 1950 50  0001 C CNN
+F 4 "do not place" H 7350 1950 50  0001 C CNN "Do Not Place"
+F 5 "mounting hole" H 7350 1950 50  0001 C CNN "Description"
+F 6 "PTH" H 7350 1950 50  0001 C CNN "Type"
 	1    7350 1950
 	1    0    0    -1  
 $EndComp
@@ -4109,6 +4401,9 @@ F 0 "H3" H 7500 1900 50  0000 L CNN
 F 1 "HOLE2" H 7500 2125 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7625 1950 50  0001 C CNN
 F 3 "~" H 7625 1950 50  0001 C CNN
+F 4 "do not place" H 7625 1950 50  0001 C CNN "Do Not Place"
+F 5 "mounting hole" H 7625 1950 50  0001 C CNN "Description"
+F 6 "PTH" H 7625 1950 50  0001 C CNN "Type"
 	1    7625 1950
 	1    0    0    -1  
 $EndComp
@@ -4120,6 +4415,9 @@ F 0 "H4" H 7775 1900 50  0000 L CNN
 F 1 "HOLE3" H 7775 2125 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7900 1950 50  0001 C CNN
 F 3 "~" H 7900 1950 50  0001 C CNN
+F 4 "do not place" H 7900 1950 50  0001 C CNN "Do Not Place"
+F 5 "mounting hole" H 7900 1950 50  0001 C CNN "Description"
+F 6 "PTH" H 7900 1950 50  0001 C CNN "Type"
 	1    7900 1950
 	1    0    0    -1  
 $EndComp
@@ -4153,7 +4451,8 @@ F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8675 1975 50  0001 C CN
 F 3 "~" H 8675 1975 50  0001 C CNN
 F 4 "TE Connectivity AMP Connectors " H 8475 1975 50  0001 C CNN "Manufacturer"
 F 5 "RCW-0C" H 8475 1975 50  0001 C CNN "Manufacturer PN"
-F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 8475 1975 50  0001 C CNN "Note"
+F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 8475 1975 50  0001 C CNN "Description"
+F 7 "SMD" H 8475 1975 50  0001 C CNN "Type"
 	1    8475 1975
 	-1   0    0    1   
 $EndComp
@@ -4178,7 +4477,8 @@ F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 9050 1975 50  0001 C CN
 F 3 "~" H 9050 1975 50  0001 C CNN
 F 4 "TE Connectivity AMP Connectors " H 8850 1975 50  0001 C CNN "Manufacturer"
 F 5 "RCW-0C" H 8850 1975 50  0001 C CNN "Manufacturer PN"
-F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 8850 1975 50  0001 C CNN "Note"
+F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 8850 1975 50  0001 C CNN "Description"
+F 7 "SMD" H 8850 1975 50  0001 C CNN "Type"
 	1    8850 1975
 	-1   0    0    1   
 $EndComp
@@ -4203,7 +4503,8 @@ F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 9450 1950 50  0001 C CN
 F 3 "~" H 9450 1950 50  0001 C CNN
 F 4 "TE Connectivity AMP Connectors " H 9250 1950 50  0001 C CNN "Manufacturer"
 F 5 "RCW-0C" H 9250 1950 50  0001 C CNN "Manufacturer PN"
-F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 9250 1950 50  0001 C CNN "Note"
+F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 9250 1950 50  0001 C CNN "Description"
+F 7 "SMD" H 9250 1950 50  0001 C CNN "Type"
 	1    9250 1950
 	1    0    0    -1  
 $EndComp
@@ -4228,24 +4529,25 @@ F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6525 9975 50  0001 C CN
 F 3 "~" H 6525 9975 50  0001 C CNN
 F 4 "TE Connectivity AMP Connectors " H 6325 9975 50  0001 C CNN "Manufacturer"
 F 5 "RCW-0C" H 6325 9975 50  0001 C CNN "Manufacturer PN"
-F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 6325 9975 50  0001 C CNN "Note"
+F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" H 6325 9975 50  0001 C CNN "Description"
+F 7 "SMD" H 6325 9975 50  0001 C CNN "Type"
 	1    6325 9975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6325 9975 6325 10200
-Connection ~ 6325 10200
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5F89B298
 P 15125 8825
 F 0 "TP6" V 15275 8850 50  0000 L CNN
-F 1 "KBDCLK" V 15183 8852 50  0000 L CNN
+F 1 "KBDCLK" V 15200 8850 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 15325 8825 50  0001 C CNN
 F 3 "~" H 15325 8825 50  0001 C CNN
 F 4 "TE Connectivity AMP Connectors " V 15125 8825 50  0001 C CNN "Manufacturer"
 F 5 "RCW-0C" V 15125 8825 50  0001 C CNN "Manufacturer PN"
-F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" V 15125 8825 50  0001 C CNN "Note"
+F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" V 15125 8825 50  0001 C CNN "Description"
+F 7 "SMD" H 15125 8825 50  0001 C CNN "Type"
 	1    15125 8825
 	1    0    0    -1  
 $EndComp
@@ -4259,7 +4561,8 @@ F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 15225 8825 50  0001 C C
 F 3 "~" H 15225 8825 50  0001 C CNN
 F 4 "TE Connectivity AMP Connectors " V 15025 8825 50  0001 C CNN "Manufacturer"
 F 5 "RCW-0C" V 15025 8825 50  0001 C CNN "Manufacturer PN"
-F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" V 15025 8825 50  0001 C CNN "Note"
+F 6 "SMT loop testpoint 3.2mm x 1.6mm, 2mm high" V 15025 8825 50  0001 C CNN "Description"
+F 7 "SMD" H 15025 8825 50  0001 C CNN "Type"
 	1    15025 8825
 	1    0    0    -1  
 $EndComp
@@ -4273,19 +4576,6 @@ Wire Wire Line
 	15125 8950 15225 8950
 Wire Wire Line
 	15025 9175 15200 9175
-$Comp
-L MD-60SM:MD-60SM J9
-U 1 1 5F5F9753
-P 14900 5700
-F 0 "J9" H 15130 5696 50  0000 L CNN
-F 1 "MOUSE" H 15130 5605 50  0000 L CNN
-F 2 "Mini_din6:CUI_MD-60SM" H 14900 5700 50  0001 L BNN
-F 3 "CUI Inc" H 14900 5700 50  0001 L BNN
-F 4 "Manufacturer recommendations" H 14900 5700 50  0001 L BNN "Field4"
-F 5 "1.03" H 14900 5700 50  0001 L BNN "Field5"
-	1    14900 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14275 5800 14500 5800
 Wire Wire Line
@@ -4354,6 +4644,9 @@ F 0 "R36" V 14125 7300 50  0000 C CNN
 F 1 "10K" V 14225 7400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14155 7400 30  0001 C CNN
 F 3 "" H 14225 7400 30  0000 C CNN
+F 4 "Resistor 10 Kohms 5% tolerance" H 14225 7400 50  0001 C CNN "Description"
+F 5 "0603" H 14225 7400 50  0001 C CNN "Package"
+F 6 "SMD" H 14225 7400 50  0001 C CNN "Type"
 	1    14225 7400
 	1    0    0    1   
 $EndComp
@@ -4361,10 +4654,13 @@ $Comp
 L Device:R R38
 U 1 1 6033C3BD
 P 14350 7750
-F 0 "R38" V 14425 7650 50  0000 C CNN
+F 0 "R38" V 14250 7750 50  0000 C CNN
 F 1 "10K" V 14350 7750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14280 7750 30  0001 C CNN
 F 3 "" H 14350 7750 30  0000 C CNN
+F 4 "Resistor 10 Kohms 5% tolerance" H 14350 7750 50  0001 C CNN "Description"
+F 5 "0603" H 14350 7750 50  0001 C CNN "Package"
+F 6 "SMD" H 14350 7750 50  0001 C CNN "Type"
 	1    14350 7750
 	1    0    0    1   
 $EndComp
@@ -4381,8 +4677,9 @@ F 0 "J10" H 15205 7846 50  0000 L CNN
 F 1 "KEYBOARD" H 15205 7755 50  0000 L CNN
 F 2 "Mini_din6:CUI_MD-60SM" H 14975 7850 50  0001 L BNN
 F 3 "CUI Inc" H 14975 7850 50  0001 L BNN
-F 4 "Manufacturer recommendations" H 14975 7850 50  0001 L BNN "Field4"
-F 5 "1.03" H 14975 7850 50  0001 L BNN "Field5"
+F 4 "MINI-DIN6" H 14975 7850 50  0001 C CNN "Description"
+F 5 "PTH" H 14975 7850 50  0001 C CNN "Type"
+F 6 "do not place" H 14975 7850 50  0001 C CNN "Do Not Place"
 	1    14975 7850
 	1    0    0    -1  
 $EndComp
@@ -4426,7 +4723,9 @@ F 0 "R14" V 8075 9800 50  0000 C CNN
 F 1 "10K" V 8150 9800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 9800 50  0001 C CNN
 F 3 "" H 8150 9800 50  0001 C CNN
-F 4 ".5%" V 8150 9800 50  0001 C CNN "Note"
+F 4 "Resistor 10 Kohms 5% tolerance" V 8150 9800 50  0001 C CNN "Description"
+F 5 "0603" H 8150 9800 50  0001 C CNN "Package"
+F 6 "SMD" H 8150 9800 50  0001 C CNN "Type"
 	1    8150 9800
 	-1   0    0    1   
 $EndComp
@@ -4438,7 +4737,9 @@ F 0 "R15" V 8225 9700 50  0000 C CNN
 F 1 "10K" V 8300 9700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8230 9700 50  0001 C CNN
 F 3 "" H 8300 9700 50  0001 C CNN
-F 4 ".5%" V 8300 9700 50  0001 C CNN "Note"
+F 4 "Resistor 10 Kohms 5% tolerance" V 8300 9700 50  0001 C CNN "Description"
+F 5 "0603" H 8300 9700 50  0001 C CNN "Package"
+F 6 "SMD" H 8300 9700 50  0001 C CNN "Type"
 	1    8300 9700
 	-1   0    0    1   
 $EndComp
@@ -4449,4 +4750,40 @@ Wire Wire Line
 Connection ~ 8150 9550
 Wire Wire Line
 	8150 9550 8150 9650
+$Comp
+L MD-60SM:MD-60SM J9
+U 1 1 5F5F9753
+P 14900 5700
+F 0 "J9" H 15130 5696 50  0000 L CNN
+F 1 "MOUSE" H 15130 5605 50  0000 L CNN
+F 2 "Mini_din6:CUI_MD-60SM" H 14900 5700 50  0001 L BNN
+F 3 "CUI Inc" H 14900 5700 50  0001 L BNN
+F 4 "MINI-DIN6" H 14900 5700 50  0001 C CNN "Description"
+F 5 "PTH" H 14900 5700 50  0001 C CNN "Type"
+F 6 "do not place" H 14900 5700 50  0001 C CNN "Do Not Place"
+	1    14900 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6325 10200
+$Comp
+L Device:C_Small C20
+U 1 1 5F5089A6
+P 6325 10300
+F 0 "C20" H 6417 10346 50  0000 L CNN
+F 1 "1nF" H 6417 10255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6325 10300 50  0001 C CNN
+F 3 "~" H 6325 10300 50  0001 C CNN
+F 4 "0603" H 12150 1550 60  0001 L CNN "Package"
+F 5 "1nF ceramic capacitor" H 6325 10300 50  0001 C CNN "Description"
+F 6 "SMD" H 6325 10300 50  0001 C CNN "Type"
+	1    6325 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 10200 6450 10200
+Wire Wire Line
+	6325 10400 6450 10400
+Wire Wire Line
+	6325 10400 6325 10850
+Connection ~ 6325 10400
 $EndSCHEMATC

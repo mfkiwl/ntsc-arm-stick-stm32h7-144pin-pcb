@@ -1,40 +1,71 @@
-Rocinante is Don Quixote's horse in the novel by Miguel de Cervantes. In many ways, Rocinante is not only Don Quixote's horse, but also his double: like Don Quixote, he is awkward, past his prime, and engaged in a task beyond his capacities.
+# Introduction
 
-# README WORK IN PROGRESS
+I wired up a microcontroller on a protoboard to display video on a vintage CRT TV.
 
-Ever since I was very young, I've wanted to output video from a circuit I've built myself.  When I was a teenager, I bought a "TV modulator" module from Radio Shack.  With a minimum set of other components (mostly just power, if I remember correctly), it would turn composite NTSC video into broadcast VHF channel 3 or 4.
+I call it Rocinante.
 
-In the Alice 2, we built a very rudimentary NTSC circuit.  An UV-erasable EPROM provided the sync signals and a timer clocked out one bit pixels for video data.  It worked, but not very well.  17 years later, the circuit had degraded so that video output was badly broken and my attempts to redesign and upgrade the circuit fizzled.  We decided to abandon the old design and build the Alice 3 instead.
+It's named after Don Quixote's horse in the novel by Miguel de Cervantes. Quixote is proud of his horse and views Rocinante as his noble steed that carries him boldy into battle.  Like Don Quixote, Rocinante is actually awkward, past his prime, and engaged in a task beyond his capabilities.
 
-PIC OF ALICE 2 VIDEO BOARD AND IMAGE
+I reached the limit of what I could do comfortably on a protoboard, so I designed a PCB with the peripherals I thought I might need for a beefy version of the thing.  I had PCBWay make the boards and place the SMD parts.  The boards arrived November 4th, 2020.  I installed the through-hole parts myself.
 
-In the Alice 3, we used a dedicated Propeller to output a textport to VGA frequencies from a Z80, and used an ARM to control peripherals including PS/2 keyboard and microSD.
+![Rosa V1](RosaV1.jpg)
 
-PIC OF ALICE 3
+# Hardware Features
+* STM32H743IITX
+* Power LED, debug LED, and RESET button
+* BOOT button to reset into DFU mode
+* 10-pin SWD (serial wire debugging) header
+* USB connector for programming/device/host
+* NTSC Composite video output
+* Stereo audio output
+* 3 "USER" buttons
+* 3 programmable RGB LEDs (WS2812B aka "NeoPixel") and 3-pin header for chaining more
+* Stereo audio input (untested)
+* 2x PS/2 input (mouse, keyboard) (untested)
+* 16-bit (R5G6B5) VGA output (untested)
+* 166MHz 16MByte SDRAM (untested)
+* 8-pin header compatible with ESP-01 for wireless (untested)
+* SD card (untested)
+* Expansion header with SPI and 2 GPIO
+* I2S header
 
-But ARM microcontrollers these days have pretty advanced functionality and high clock rates.  NTSC is an old standard now, first supplanted by high clock rates and color resolutions in VGA, and later pure digital signals over HDMI and DisplayPort.  Still, the idea of building a complete "modern" "TV typewriter" with just an ARM and minimum parts seemed cool to me, so I built one.  I describe the design, capabilities, and limitations here.
+I'm keeping a spreadsheet of [the status of hardware features](https://docs.google.com/spreadsheets/d/15A8a8_nsbp0DDcee_6BzvSB4MXrgqT0VfsGb4YH8E2E/edit#gid=0) as I bring them up.
 
-# Color
+I'm keeping rework notes for Rev1 in [rework.md](rework.md).
 
-Every NTSC scanline has a “colorburst” in the off-screen part of the line, at 3.579545 MHz.  This burst has the same *average* amplitude as the off-screen blank part of the line, and was much higher frequency than the usual pixel frequency, so B/W sets would just ignore it.
+# The Fundmental Idea
 
-A color scanline was separated into luminance and chroma before transmission. A 3.579545MHz signal encoded the chroma with its phase (the hue; e.g. blue is 347 degrees, red is 103, green is 241) and its amplitude (saturation; 0 is gray, 1 is full color).  The luminance signal (0 to 1) and chroma (-1 to +1 scaled by the saturation) were added together for broadcast or composite cables.
+There is no framebuffer, per se, in Rocinante.
 
-Color TVs know to separate out the high-frequency component and turn that back into hue, saturation, and value (luminance or brightness).  B/W sets would not separate the high-frequency color signal so would just display the average signal so it would just show up as grayscale.
+Instead, there are two scanline buffers, and the CPU fills the next scanline buffer while DMA is scanning out the current scanline buffer.
 
-I think there’s some subtlety there to broadcast and where the signals lie in spectrum allocated to the channel.  I don’t understand radio, so I’ll just wave my hands.
+Modern microcontrollers have high capabilities (the STM32H7 runs at 480MHz and has an FPU including double floats).  Embedded SRAM remains expensive, however, so most of the STM32 series doesn't contain enough RAM to display e.g. double-buffered 640x480 with 8-bit pixels.
 
-Here’s a picture I’ve turned into NTSC video.  The green lines happen because I get a glitch sometimes in which causes the pixels are offset by some fraction of a 3.579545MHz wave, so the colors are all rotated around the color wheel.
+This implementation trades CPU for memory and generates video data on-the-fly (aka "racing the beam") from a handful of different video formats at the time of writing:
 
-PICTURE
+* <img src="ppm_display.jpg" style="zoom:50%;" />1, 2, 4, and 8-bit palettized pixmaps
+* <img src="40x24_text.jpg" style="zoom:50%;" /> <img src="80x24_text.jpg" style="zoom: 50%;" />Monochrome text
+* A "Wolfenstein"-style ray-casting maze renderer
+* A display made of multiple run-length-compressed gradient spans per scanline
 
-# DAC
+The current hardware supports a composite video display using NTSC output on an 8-bit DAC.  The pixel clock is 4x the color burst frequency, so typical console displays of the 1970's and 1980's should be almost directly representable.  Because the data is generated one scanline ahead and some CPU capacity is left over per scanline for apps, the latency for processing can be as low as one scanline.
 
-8 pins from a microcontroller are connected through resistors to form a (really bad) analog signal which I make slightly better with capacitors.
+Applications currently include a PPM viewer, PCM audio player, rudimentary 3D model viewer, and a very limited command shell.
 
-# Signal generation
+I originally designed this with emulation of the Apple ][, ColecoVision, and Atari 2600 in mind, but who knows if I'll ever find the time for those!
 
-I’m pretty sure a framebuffer from the 70's and 80's would turn RGB into YUV (“YIQ” for NTSC) and use logic to indicate when horizontal and digital sync signals should be.  Those would feed an analog circuit that would output a much higher quality analog signal.
+# The Vision
 
-I just drive the entire signal with DMA through the DAC
+## Hardware
 
+On the PCB I also laid out a bunch of pie-in-the-sky features without knowing they would work.
+
+The protoboard version used SPI to talk to an SD card.  The PCB wires an SD slot to the actual SDMMC signals on the STM32H7.
+
+There's a 15-pin VGA header, two PS/2 jacks, and stereo audio input to give it some better media capabilities.
+
+I daydreamed a system capable of running multiple simultaneous apps and installed 16 megabytes of SDRAM.
+
+## Pipe Dream
+
+Over time I hope I can make most of the system function.  If there's something that doesn't work but a fix is clear, maybe I'll spin a second rev of the board if I don't lose interest before then.
